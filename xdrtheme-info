@@ -9,4 +9,4 @@ GITREPO="xdrtheme-adiw"
 # Change main_master below with your active branch under theme repository, No space allowed
 GITBRANCH="main_master"
 # Change Theme_Name with  theme version, No space allowed. Example : v1.0 or v2.1-beta
-THEMEVER="v1.0"
+THEMEVER="v2.0"
