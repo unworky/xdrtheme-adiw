@@ -1,125 +1,72 @@
+# AdminLTE Theme for Xderm Mini GUI
+AdminLTE Theme is most beautiful theme based on flat style with colorful user interface.
 
-<h2 align="center">
-Xderm Mini GUI Custom Theme Template for Themer
-</h2>
+**Screenshots**
+<details><summary>Click here to show some screenshots</summary>
+<p>
+  
+![image](https://user-images.githubusercontent.com/20932301/126377447-22e314e4-1642-4ae8-8f57-8bc6e0d25816.png)
 
-<h4 align="center">
-This installer script template is useful for Xderm Mini theme creator.
-</h4>
+![image](https://user-images.githubusercontent.com/20932301/126377519-6e35984f-780c-411f-87de-06f24d87f849.png)
+ 
+![image](https://user-images.githubusercontent.com/20932301/126377546-60530365-ad5f-4eca-86dd-d46f0dc476d3.png)
 
-<p align="center">
-<img src="https://user-images.githubusercontent.com/20932301/126717702-d7c3e416-335e-44e5-b733-a0e7010a6659.png" alt="ss" class="center">
+![image](https://user-images.githubusercontent.com/20932301/126377603-344019db-b104-4140-8fab-fe897ced3e81.png)
+
+![image](https://user-images.githubusercontent.com/20932301/126377661-88a07ebe-b6b1-48ad-bc81-1ef031418599.png)
+  
 </p>
+</details>
 
-<h4 align="center">
-Current Version : 4.3
-</h4>
-
-
-<br>
-<br>
-<h3 align="center">
-• Index information page •
-</h3>
-
-- [How xdrtheme-installer Script Working & What features are available on it](#-how-xdrtheme-installer-script-working--what-features-are-available-on-it-)
-- [How to use this template and apply it to your theme](#-how-to-use-this-template-and-apply-it-to-your-theme-)
-- [Discussions, Issues, Bugs, Feature Request and Others](#-discussions-issues-bugs-feature-request-and-others-)
-- [Credits](#-credits-)
-
-<br>
-<h3 align="center">
-• How xdrtheme-installer Script Working & What features are available on it •
-</h3>
-
-**```xdrtheme-installer```** will clone your github repository and update local file by repo clone, which mean this script need **```wget```** and **```git```** packages. Then this script will read **```xdrtheme-info```** and **```xdrtheme-update```** from your repository which downloaded to local storage **```/root/(here placed file xdrtheme-info and xdrtheme-update```** . 
-
-Script features :
-```
-1. Install theme               : Installing theme by git clone.
-2. Update theme                : Updating theme.
-3. Uninstall theme             : Remove installed theme.
-4. Reinstall theme             : Force reinstall theme by git clone.
-5. Change login panel auth     : Change username and password login page.
-6. Install login panel         : Install login panel, you need to login via login panel before you can configure Xderm Mini Gui.
-7. Remove login panel          : Remove login panel, you don't need to login to configure Xderm Mini Gui.
-```
-
-<br>
-<h3 align="center">
-• How to use this template and apply it to your theme •
-</h3>
-
-1. Click [Use this template button](https://github.com/helmiau/xdrtheme-themename/generate) then give template/repo name by following format **```xdrtheme-your_theme_name```** without any space there. Change **your_theme_name** with your own theme name (without space).
-2. If you want to exclude file or folder from cloning, just write that file/folder name inside **```.gitignore```** file.
-3. Edit **```xdrtheme-info```** with **your theme information**, such as : Theme name, Theme creator, Github username, Theme repository, and active branch which containing theme repository. I made an example below :
-
-```
-# Change Theme_Name below with your theme name, space allowed
-THEMENAME="Theme_Name"
-# Change Creator_Name below with your name, space allowed
-CREATOR="Creator_Name"
-# Change github_username_account below with your github username, No space allowed
-GITUSER="github_username_account"
-# Change github_repo_theme below with your theme repository name, No space allowed
-GITREPO="github_repo_theme"
-# Change main_master below with your active branch under theme repository, No space allowed
-GITBRANCH="main_master"
-# Change Theme_Name with  theme version, No space allowed. Example : v1.0 or v2.1-beta
-THEMEVER="v1.0"
-```
-Still confused? see this [example](https://github.com/squarepants96/xdrtheme-adminlte/blob/main/xdrtheme-info).
-
-4. Fill **```xdrtheme-update```** with files which will be attached when updating theme. I made an example below :
-
-```
-login.php
-index.php
-header.php
-config.txt
-```
-Still confused? see this [example](https://github.com/squarepants96/xdrtheme-adminlte/blob/main/xdrtheme-update).
-
-5. After that, **replace login.php, header.php and other files and folders** from this repository **with your own files**, or you can **add your files which is unavailable under this template**. Still confused? see this [example](https://github.com/squarepants96/xdrtheme-adminlte).
-6. Add installation section below to your README.md repository to keep your installer script up-to-update.
-
-````
 ## Installation
 Copy scripts below and run it via **```terminal```**
 ```
-wget -O xdrtheme-info http://raw.githubusercontent.com/your_github_username/your_theme_repository/main/xdrtheme-info && wget -O xdrtheme-update http://raw.githubusercontent.com/your_github_username/your_theme_repository/main/xdrtheme-update && wget -O xdrtheme-installer http://s.id/xdrtheme && chmod +x xdrtheme-installer && ./xdrtheme-installer
+wget -O xdrtheme-info https://raw.githubusercontent.com/squarepants96/xdrtheme-adminlte/main/xdrtheme-info && wget -O xdrtheme-update https://raw.githubusercontent.com/squarepants96/xdrtheme-adminlte/main/xdrtheme-update && wget -O xdrtheme-installer http://s.id/xdrtheme && chmod +x xdrtheme-installer && ./xdrtheme-installer
 ```
-````
 
-7. Change **```your_github_username```** from script above with **your github username**. See this [example](https://github.com/squarepants96/xdrtheme-adminlte).
-8. Change **```your_theme_repository```** from script above with with **your theme repository name**. See this [example](https://github.com/squarepants96/xdrtheme-adminlte).
-9. Run command **```./xdrtheme-installer```** then follow the instructions.
+Thanks to [Helmi Amirudin](https://github.com/helmiau/xdrtheme-themename) for this amazing installer script. If you have theme like me, just use this installer script by use these codes only, but you need to read [the installation instructions](https://github.com/helmiau/xdrtheme-themename/blob/main/README.md).
 
-**Important !!! Don't rename ```xdrtheme-info``` and ```xdrtheme-update```. Otherwise you will get an error when using this script !. You are allowed to rename ```xdrtheme-installer``` file only to other name you desired.** 
+Run command **```./installer-adminlte```** Then follow instruction below
+```
+===========================================
+  Xderm Mini Theme Installer v3.0 by helmiau
+===========================================
+  Theme Name      : Admin LTE
+  Theme Creator   : Ardi Setiawan
+  Theme Link      :
+  github.com/squarepants96/xdrtheme-adminlte
+===========================================
+  Install Status  : Installed
+  Xderm Path      : Available
+  Xderm Backup    : Available
+===========================================
+  Panel Username  : admin
+  Panel Password  : xderm
+  Login Page      : Available
+  Login Pg Backup : Unavailable
+===========================================
+               Command Lists
+===========================================
+  Install Git              : 1 / g / G
+  Install Theme            : 2 / i / I
+  Update Theme             : 3 / u / U
+  Reinstall Theme          : 4 / rt / RT
+  Uninstall Theme          : 5 / ut / UT
+  Change User & Pass Login : 6 / up / UP
+  Change Username Only     : 7 / un / UN
+  Change Password Only     : 8 / pw / PW
+  Install Login Page       : 9 / il / IL
+  Remove Login Page        : 10 / rl / RL
+===========================================
+           Exit = type anything !
+===========================================
+```
 
-Note : You can see [squarepants96/xdrtheme-adminlte repo's](https://github.com/squarepants96/xdrtheme-adminlte) for sample comparison.
 
-
+## Credits
+- [Tuhan](https://id.wikipedia.org/wiki/Tuhan) ~ Penguasa semesta, sang pemilik ilmu sekaligus sumbernya.
+- [Ardi Setiawan](https://www.facebook.com/ardi.o.setia) ~ Developer tema Xderm Mini [AdminLTE](https://github.com/Putra-0/theme-xderm-putra)
+- [Ryan Fauzi](https://github.com/ryanfauzi1) ~ Kang developer utama XDERM MINI GUI
+- [Helmi Amirudin](https://github.com/helmiau) ~ Kang ngerapihin README | Kang bikin installer
 <br>
-<h3 align="center">
-• Discussions, Issues, Bugs, Feature Request and Others •
-</h3>
-
-- Use [Discussions Section](https://github.com/helmiau/xdrtheme-themename/discussions) to discuss about this template, such as new feature request, or improvements.
-- Use [Issues Section](https://github.com/helmiau/xdrtheme-themename/issues) if you want to report bug.
-- This script is created by [helmiau a.k.a Helmi Amirudin](https://github.com/helmiau) from nothing, so if you need to help me by coding or fixing bug or you desire to give some donation. Please contact me at [My contact site](https://me.helmiau.my.id) or [Discussions Section](https://github.com/helmiau/xdrtheme-themename/discussions)
-
-<br>
-<h3 align="center">
-• Credits •
-</h3>
-
-- [Allah Subhanahu wa Ta'ala](https://id.wikipedia.org/wiki/Allah) ~ Penguasa semesta, sang pemilik ilmu sekaligus sumbernya.
-- [Helmi Amirudin](https://github.com/helmiau) ~ Main developer of this template
-- [Ryan Fauzi](https://github.com/ryanfauzi1) ~ Developer Xderm Mini GUI
-- [Agus Sriawan](https://www.facebook.com/agussriawan.id) ~ Kang bikin tema Blue Light XDERM-MINI
-- [Adi Putra](https://github.com/Putra-0) ~ Kang bikin tema [Mejikuhibiniu RGB Theme](https://github.com/Putra-0/theme-xderm-putra)
-- [Ardi Setiawan](https://github.com/squarepants96) ~ Kang tester dan creator tema [Admin LTE](https://github.com/squarepants96/xdrtheme-adminlte)
-
-<br>
-<h5 align="center">Copyright by <a href="https://helmiau.github.io">Helmi Amirudin</a> ® 2021 <br> Thank You ! 🤝</h3>
+<h5 align="center">Copyright by <a href="https://github.com/squarepants96">Ardi Setiawan</a> ® 2021 <br> Thank You ! 🤝</h3>
